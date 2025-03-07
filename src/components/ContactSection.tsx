@@ -53,7 +53,7 @@ export function ContactSection() {
           </a>
 
           <a 
-            href="mailto:evertonceciliano@gmail.com"
+            href="mailto:evertoncecilianosouza@gmail.com"
             className="card group hover:bg-zinc-800/50 hover:scale-105 transition-all duration-300 sm:col-span-2 lg:col-span-1"
           >
             <div className="flex flex-col items-center gap-3 sm:gap-4 p-4 sm:p-6">
@@ -62,7 +62,7 @@ export function ContactSection() {
                 <polyline points="22,6 12,13 2,6"/>
               </svg>
               <h3 className="text-lg sm:text-xl font-bold text-center">Email</h3>
-              <p className="text-sm sm:text-base text-gray-400 text-center break-all">evertonceciliano@gmail.com</p>
+              <p className="text-sm sm:text-base text-gray-400 text-center break-all">evertoncecilianosouza@gmail.com</p>
             </div>
           </a>
         </motion.div>
