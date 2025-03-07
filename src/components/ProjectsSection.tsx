@@ -33,7 +33,7 @@ export function ProjectsSection() {
               title: "Furniro - E-commerce de Móveis",
               description: "E-commerce completo desenvolvido com Next.js, TypeScript e Tailwind CSS. Sistema de carrinho, catálogo de produtos e checkout integrado.",
               image: "/furniro.png",
-              link: "https://vercel.com/evertoncecilianos-projects/funiro"
+              link: "https://funiro-rho.vercel.app"
             },
             {
               title: "Weather App",
