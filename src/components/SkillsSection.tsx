@@ -2,9 +2,9 @@ import { motion } from 'framer-motion'
 
 export function SkillsSection() {
   return (
-    <section id="skills" className="py-32 px-4 relative">
+    <section id="skills" className="py-16 sm:py-24 lg:py-32 px-4 relative">
       <div className="absolute inset-0 w-full h-full">
-        <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-blue-500/30 rounded-full blur-[120px]" />
+        <div className="absolute top-1/2 right-0 w-[280px] sm:w-[500px] h-[280px] sm:h-[500px] bg-blue-500/30 rounded-full blur-[80px] sm:blur-[120px]" />
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto">
@@ -12,11 +12,11 @@ export function SkillsSection() {
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold mb-16 gradient-text"
+          className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12 lg:mb-16 gradient-text text-center sm:text-left"
         >
           Habilidades & Tecnologias
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {[
             {
               title: "Front-end Core",
@@ -52,14 +52,14 @@ export function SkillsSection() {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="card"
+              className="card hover:shadow-lg transition-all duration-300"
             >
-              <h3 className="text-2xl font-bold mb-6">{category.title}</h3>
-              <div className="space-y-4">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">{category.title}</h3>
+              <div className="space-y-3 sm:space-y-4">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex} className="flex items-center justify-between">
-                    <span className="text-gray-300">{skill.name}</span>
-                    <span className="text-sm px-3 py-1 rounded-full bg-purple-500/10 text-purple-300">
+                    <span className="text-sm sm:text-base text-gray-300">{skill.name}</span>
+                    <span className="text-xs sm:text-sm px-2 sm:px-3 py-1 rounded-full bg-purple-500/10 text-purple-300">
                       {skill.level}
                     </span>
                   </div>
